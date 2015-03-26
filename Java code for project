@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class Project
+{
+public static void main(String [] args)
+{
+	Scanner s = new Scanner(System.in);
+	
+	
+	int choice, number1, number2, answer;
+	int x;
+	int y;
+	int z;
+	int count = 7;
+	
+	
+	
+	System.out.println("Hello user, we have the following function on this calculater: ");
+	System.out.println("1 Addition");
+	System.out.println("2 Subtraction");
+	System.out.println("3 multiplication");
+	System.out.println("4 division");
+	System.out.println("5 quotient of division");
+	System.out.println("6 remainder of integer division");
+	System.out.println("Please type the number of the operation you desire to perform");
+	choice = s.nextInt();
+	
+	if (choice == 1)System.out.println("addition");
+	else if (choice == 2)System.out.println("subtraction");
+	else if (choice == 3)System.out.println("multiplication");
+	else if (choice == 4)System.out.println("division");
+	else if (choice == 5)System.out.println("quotient of division");
+	else if (choice == 6)System.out.println("remainder of interger division");
+	else System.out.println("Invalid");
+	
+
+	while (count > 8){
+		System.out.println(count);
+		count ++;
+
+	
+	System.out.println("Okay what is the first number: ");
+	number1=s.nextInt();
+	System.out.println("Please type the other number: ");
+	number2=s.nextInt();
+	answer = number1 + number2;
+	System.out.println("your answer is: " + answer );
+	
+	
+}
+}
+}
